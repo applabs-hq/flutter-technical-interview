@@ -53,7 +53,8 @@ Product: {
 ### Out of Scope
 
 - Tests of any kind
-- Date picker UI (this can be hard coded to today NZST)
+- Date ranges
+- Currency code handling
 
 ### 1. API Integration
 
@@ -63,7 +64,7 @@ Make an API call to `/orders` using the schema details laid out in [schema.md](d
 - **Method**: GET
 - **Returns**: A list of orders
 
-**NOTE:** Use any package you desire
+**NOTE:** Use any package you desire to fetch this data
 
 ### 2. Order Model Enhancements
 
