@@ -10,14 +10,14 @@ class ReportsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Reports Page',
           style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-        child: const Row(
+      body: const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.0),
+        child: Row(
           children: [
             Flexible(child: RevenueReport()),
             SizedBox(width: 16),
