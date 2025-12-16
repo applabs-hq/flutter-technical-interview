@@ -15,7 +15,7 @@ class ReportsPage extends StatelessWidget {
           style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
         ),
       ),
-      body: const Padding(
+      body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.0),
         child: Row(
           children: [
