@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final class RevenueReport extends StatelessWidget {
+class RevenueReport extends StatelessWidget {
   const RevenueReport({super.key});
 
   @override

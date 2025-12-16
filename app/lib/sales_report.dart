@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-final class SalesReport extends StatelessWidget {
+class SalesReport extends StatelessWidget {
   const SalesReport({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.zero,
-
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(8.0),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'revenue_report.dart';
 import 'sales_report.dart';
 
-final class ReportsPage extends StatelessWidget {
+class ReportsPage extends StatelessWidget {
   const ReportsPage({super.key});
 
   @override
