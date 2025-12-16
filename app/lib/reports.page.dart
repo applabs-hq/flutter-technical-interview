@@ -3,9 +3,14 @@ import 'package:flutter/material.dart';
 import 'revenue_report.dart';
 import 'sales_report.dart';
 
-class ReportsPage extends StatelessWidget {
+class ReportsPage extends StatefulWidget {
   const ReportsPage({super.key});
 
+  @override
+  State<ReportsPage> createState() => _ReportsPageState();
+}
+
+class _ReportsPageState extends State<ReportsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
