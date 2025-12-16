@@ -6,11 +6,13 @@ This Flutter application demonstrates order management and reporting functionali
 
 ## IMPORTANT POINTS
 
-- We are here to assess your basic technical ability, decision making, and communication throughout
-- Do not write tests
-- This is not a test of your UI ability
-- This is not a test of speed
-- You do not have to finish the assessment within the timeframe
+- We are here to assess your basic technical ability, technical decision making, and communication throughout
+- Do NOT write tests
+- This is NOT a test of your UI ability
+- This is NOT a test of speed
+- You do NOT have to finish the assessment within the timeframe
+- DO try to talk through most of your work, we will ask questions throughout, you may as well
+- DO show working, AI usage, and research on the shared screen
 
 ## Data Models
 
@@ -21,7 +23,7 @@ Order: {
   id: String,
   createdAtUTC: DateTime,
   lines: [OrderLine],
-  currencyCode: "NZD",
+  currencyCode: String,
 }
 ```
 
@@ -59,16 +61,9 @@ Make an API call to `/orders` using the schema details laid out in [schema.md](d
 
 - **Endpoint**: `https://interview-demo-api.azurewebsites.net/orders`
 - **Method**: GET
-- **Query Parameters**:
-  - `from`: DateTime in NZST (start of date range)
-  - `to`: DateTime in NZST (end of date range)
-- **Returns**: A list of orders for the specified date range
+- **Returns**: A list of orders
 
-**Implementation Notes**:
-
-- Use the `timezone` package (already added) to handle NZST timezone conversions [timezone package here](https://pub.dev/packages/timezone)
-- Query for orders from TODAY only, using NZST dates for your query parameters
-- This should return 6 orders when querying for today's date
+**NOTE:** Use any package you desire
 
 ### 2. Order Model Enhancements
 

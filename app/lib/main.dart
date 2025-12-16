@@ -1,7 +1,7 @@
 import 'package:app/reports.page.dart';
 import 'package:flutter/material.dart';
 
-Future<void> main() async{
+Future<void> main() async {
   runApp(const MyApp());
 }
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
       home: const ReportsPage(),
     );

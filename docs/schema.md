@@ -1,18 +1,11 @@
 # /Orders endpoint
 
-- `https://interview-demo-api.azurewebsites.net/orders`
-- [example](https://interview-demo-api.azurewebsites.net/orders)
-- GET request
-
-## Query Params
-
-`https://interview-demo-api.azurewebsites.net/orders/?from=,to=`
-- [example](https://interview-demo-api.azurewebsites.net/orders)
-
-- `from` - DateTime in NZST
-- `to` - DateTime in NZST
+- **Endpoint**: `https://interview-demo-api.azurewebsites.net/orders`
+- **Method**: GET
+- **Returns**: A list of orders
 
 ## Schema
+
 ```
 Order: {
 	id: String,
@@ -122,6 +115,6 @@ Product: {
       }
     ],
     "currencyCode": "NZD"
-  },
+  }
 ]
 ```
