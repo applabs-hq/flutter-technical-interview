@@ -16,7 +16,15 @@ This Flutter application demonstrates order management and reporting functionali
 
 ## Setup
 
-Checkout [setup.md](docs/setup.md) for project setup instructions
+```bash
+flutter pub get
+```
+
+to fetch dependencies
+
+## Debugging
+
+Run the `Run Flutter Web` debug task.
 
 ## Requirements
 
