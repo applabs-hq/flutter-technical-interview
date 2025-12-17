@@ -85,4 +85,4 @@ This report provides aggregate totals for all orders within the date range:
 This report provides product-level analytics:
 
 1. **Total count of all purchased products**: Sum of all quantities across all order lines
-2. **Sum of each report line**: Aggregate totals per product (or per order line, depending on requirements)
+2. **Sum of each report line**: Aggregate totals per product
