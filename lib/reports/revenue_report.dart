@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../orders/order.model.dart';
+
 class RevenueReport extends StatelessWidget {
-  const RevenueReport({super.key});
+  final List<Order> orders;
+
+  const RevenueReport({super.key, required this.orders});
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +15,7 @@ class RevenueReport extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -21,6 +26,11 @@ class RevenueReport extends StatelessWidget {
               ],
             ),
             Divider(),
+            Text(
+              'Total Orders: ${orders.length}',
+              style: TextStyle(fontSize: 16),
+            ),
+            // Add more revenue calculations here
           ],
         ),
       ),

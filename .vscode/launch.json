@@ -1,18 +1,25 @@
 {
   "configurations": [
-    {
-      "name": "Run Flutter Web Server",
-      "type": "dart",
-      "request": "launch",
-      "args": ["-d", "web-server", "--web-port", "8080"],
-      "program": "app/lib/main.dart"
-    },
+    // {
+    //   "name": "Run Flutter Web Server",
+    //   "type": "dart",
+    //   "request": "launch",
+    //   "args": [
+    //     "-d",
+    //     "web-server",
+    //     "--web-port",
+    //     "8090",
+    //     "--web-hostname",
+    //     "0.0.0.0"
+    //   ],
+    //   "program": "app/lib/main.dart"
+    // },
     {
       "name": "Run Flutter Web",
       "type": "dart",
       "request": "launch",
       "args": [],
-      "program": "app/lib/main.dart"
+      "program": "lib/main.dart"
     }
   ]
 }

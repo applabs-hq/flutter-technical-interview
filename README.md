@@ -14,39 +14,9 @@ This Flutter application demonstrates order management and reporting functionali
 - DO try to talk through most of your work, we will ask questions throughout, you may as well
 - DO show working, AI usage, and research on the shared screen
 
-## Data Models
+## Setup
 
-### Order
-
-```dart
-Order: {
-  id: String,
-  createdAtUTC: DateTime,
-  lines: [OrderLine],
-  currencyCode: String,
-}
-```
-
-### OrderLine
-
-```dart
-OrderLine: {
-  id: String,
-  quantity: int,
-  product: Product,
-  discount: double,
-}
-```
-
-### Product
-
-```dart
-Product: {
-  id: String,
-  tax: double,
-  price: double,
-}
-```
+Checkout [setup.md](docs/setup.md) for project setup instructions
 
 ## Requirements
 
@@ -55,16 +25,21 @@ Product: {
 - Tests of any kind
 - Date ranges
 - Currency code handling
+- State management libraries
 
-### 1. API Integration
+### 1. Familiarize yourself with the codebase
 
-Make an API call to `/orders` using the schema details laid out in [schema.md](docs/schema.md):
+There is an existing API call to `/orders` using the schema details laid out in [schema.md](docs/schema.md):
 
 - **Endpoint**: `https://interview-demo-api.azurewebsites.net/orders`
 - **Method**: GET
 - **Returns**: A list of orders
 
-**NOTE:** Use any package you desire to fetch this data
+---
+
+- The call is being made using the `http` package, inside [lib/orders/orders.api.dart](lib/orders/orders.api.dart)
+- The api is being called from the reports view model
+- The data is being presented on the reports page
 
 ### 2. Order Model Enhancements
 
@@ -103,7 +78,3 @@ This report provides product-level analytics:
 
 1. **Total count of all purchased products**: Sum of all quantities across all order lines
 2. **Sum of each report line**: Aggregate totals per product (or per order line, depending on requirements)
-
-## Setup
-
-Checkout [setup.md](docs/setup.md) for project setup instructions
